@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  background-color: #131313;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+
+  font-size: 2rem;
+  line-height: 1;
+  color: #fff;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  max-width: 95rem;
+  padding: 0 8rem;
+  margin: 0 auto;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem #70a2d4ae;
+  transition: all 0.15s;
+}
+
+.hide {
+  display: none;
+}
+
+/******** OTHERS ********/
+
+.wavescan-icon {
+  height: 5rem;
+  width: auto;
+}
+
+.nav-bar {
+  background-color: #131313;
+  height: 10rem;
+
+  display: grid;
+  align-items: center;
+  justify-content: start;
+}
+
+.card {
+  background-color: #333333;
+  border-radius: 2rem;
+
+  margin-top: 10rem;
+  padding: 5rem 6rem;
+
+  transition: all 0.2s;
+}
+
+.create-form {
+  display: grid;
+  grid-gap: 2rem 3rem;
+}
+
+label {
+  padding-bottom: 1rem;
+}
+
+input,
+select {
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+
+  width: 100%;
+
+  font-size: 1.7rem;
+
+  border: none;
+}
+
+input::placeholder {
+  color: #868e96;
+}
+
+.btn {
+  color: #fff;
+  background-color: #1664b3;
+  text-transform: uppercase;
+
+  border-radius: 1rem;
+  border: none;
+
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+
+  transition: all 0.15s;
+}
+
+.btn:active,
+.btn:hover {
+  background-color: #12508f;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.email-link:hover,
+.email-link:active {
+  color: #30d5c8;
+}
+
+.ntu-link:link,
+.ntu-link:visited {
+  color: #d71440;
+}
+
+.ntu-link:hover,
+.ntu-link:active {
+  color: #e35b79;
+}
+
+.os-link:link,
+.os-link:visited {
+  color: #2081e2;
+}
+
+.os-link:hover,
+.os-link:active {
+  color: #63a7eb;
+}
+
+.spotify-link {
+  color: #1db954;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.sass-link:link,
+.sass-link:visited {
+  color: #bf4080;
+}
+
+.sass-link:active,
+.sass-link:hover {
+  color: #d279a6;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,
+    maximum-scale=1.0, user-scalable=0, height=device-height"
+    />
+
+    <meta
+      name="description"
+      content="T.Daranidarran is a front-end developer based in Singapore, with a focus in user experience, and user interaction."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/general.css" />
+    <link rel="stylesheet" href="/create-form/css/style.css" />
+    <!-- <link rel="stylesheet" href="/home/css/queries.css" /> -->
+
+    <title>Hire me please</title>
+  </head>
+  <body>
+    <nav class="nav-bar container">
+      <header class="header">
+        <div class="nav-name-div">
+          <a class="nav-name" href="https://www.wavescan.sg"
+            ><img
+              class="wavescan-icon"
+              src="/wavescan-website.png"
+              alt="wavescan-icon"
+          /></a>
+        </div>
+      </header>
+    </nav>
+
+    <div class="section-hero container">
+      <div class="card">
+        <form class="create-form" name="data-collection" netlify>
+          <h2 class="name">Create New Project</h2>
+          <div>
+            <label for="project-name">Project Name</label>
+            <input
+              id="project-name"
+              type="text"
+              placeholder="My_Project"
+              name="project-name"
+              minlength="4"
+              required
+            />
+
+            <ion-icon
+              id="proj-tick"
+              class="correct-input hide"
+              name="checkmark-outline"
+            ></ion-icon>
+          </div>
+
+          <div>
+            <label for="scan-mode">Scanning Mode</label>
+            <div class="chevron-down-input">
+              <select id="scan-mode" name="scan-mode" required>
+                <option value="">Please choose one option:</option>
+                <option value="GANTRY">Gantry</option>
+                <option value="CRAWLER">Crawler</option>
+                <option value="AUTO">Auto</option>
+                <option value="MANUAL">Manual</option>
+                <option value="ARM">Arm</option>
+              </select>
+              <ion-icon
+                class="chevron-down"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div class="half-row">
+            <label>Scan Dimensions (cm)</label>
+            <div class="dimension">
+              <label for="dimension-x">X</label>
+              <input
+                id="dimension-x"
+                type="number"
+                placeholder="0"
+                name="dimension-x"
+                min="1"
+                required
+              />
+              <ion-icon
+                id="x-tick"
+                class="correct-input hide x-tick"
+                name="checkmark-outline"
+              ></ion-icon>
+            </div>
+            <div class="dimension">
+              <label for="dimension-y">Y</label>
+              <input
+                id="dimension-y"
+                type="number"
+                placeholder="0"
+                name="dimension-y"
+                min="1"
+                required
+              />
+              <ion-icon
+                id="y-tick"
+                class="correct-input hide"
+                name="checkmark-outline"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div>
+            <label for="frequency">Scanner Frequency (GHz)</label>
+            <input
+              id="frequency"
+              type="number"
+              placeholder="0.0"
+              name="frequency"
+              step=".1"
+              required
+            />
+            <ion-icon
+              id="freq-tick"
+              class="correct-input hide"
+              name="checkmark-outline"
+            ></ion-icon>
+          </div>
+
+          <button class="full-row btn btn--form submit">SCAN</button>
+        </form>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0"></script>
+    <script src="/create-form/script.js"></script>
+  </body>
+</html>

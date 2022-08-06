@@ -1,0 +1,232 @@
+/**************************/
+/* BELOW 1200x*/
+/**************************/
+
+@media only screen and (max-width: 75em) {
+  /* project cards */
+
+  .ipfit-full-phone {
+    right: 6rem;
+  }
+
+  .white-back {
+    padding: 3rem 6rem;
+  }
+
+  .subtext {
+    width: 55%;
+  }
+}
+
+/**************************/
+/* BELOW 832px*/
+/**************************/
+
+@media only screen and (max-width: 52em) {
+  /* project cards */
+
+  .white-back {
+    padding: 3rem 4rem;
+  }
+
+  .ipfit-full-phone {
+    bottom: 4%;
+    right: 4rem;
+
+    width: 37%;
+  }
+
+  .heading {
+    font-size: 5rem;
+    padding-bottom: 0.7rem;
+  }
+
+  .subtext {
+    letter-spacing: 0.05px;
+    width: 60%;
+  }
+}
+
+/**************************/
+/* BELOW 656px*/
+/**************************/
+
+@media only screen and (max-width: 41em) {
+  /* project cards */
+
+  .white-back {
+    padding: 2rem 4rem;
+  }
+}
+
+/**************************/
+/* BELOW 560px*/
+/**************************/
+
+@media only screen and (max-width: 35em) {
+  .intro {
+    padding: 15rem 0 15rem;
+  }
+
+  .heading {
+    font-size: 4rem;
+    padding-bottom: 0.7rem;
+  }
+
+  .subtext {
+    font-size: 1.7rem;
+    letter-spacing: 0.1px;
+
+    width: 55%;
+  }
+}
+
+/**************************/
+/* BELOW 480px*/
+/**************************/
+
+@media only screen and (max-width: 30em) {
+  /* project cards */
+  .white-back {
+    padding: 1.8rem 4rem;
+
+    bottom: 6%;
+  }
+}
+
+/**************************/
+/* BELOW 400px*/
+/**************************/
+
+@media only screen and (max-width: 25em) {
+  /* introduction */
+
+  .name {
+    font-size: 5rem;
+  }
+
+  .doodle-text {
+    width: 25rem;
+    height: auto;
+
+    margin-bottom: -2.4rem;
+  }
+
+  .description {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+
+  /* project cards */
+
+  .project-header .heading {
+    font-size: 4rem;
+  }
+}
+
+/**************************/
+/* BELOW 320px*/
+/**************************/
+
+@media only screen and (max-width: 20em) {
+  /* introduction */
+
+  .intro {
+    padding: 15rem 0 15rem;
+  }
+
+  .name {
+    font-size: 4.2rem;
+    padding-bottom: 2rem;
+  }
+
+  .doodle-text {
+    width: 22rem;
+    height: auto;
+
+    margin-bottom: -2.2rem;
+  }
+
+  .description {
+    font-size: 3.7rem;
+  }
+
+  .project-header {
+    font-size: 2rem;
+  }
+
+  /* projects */
+
+  .section-project {
+    padding-bottom: 7rem;
+  }
+
+  .white-back {
+    padding: 1.2rem 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .ipfit-full-phone {
+    right: 2.5rem;
+  }
+
+  .heading {
+    font-size: 3rem;
+    padding-bottom: 0.2rem;
+  }
+
+  .subtext {
+    font-size: 1.1rem;
+    width: 51%;
+
+    letter-spacing: 0;
+    line-height: 1;
+  }
+}
+
+/* IPHONE QUERIES */
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3),
+  only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3),
+  only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3),
+  only screen and (device-width: 360px) and (device-height: 780px) and (-webkit-device-pixel-ratio: 3),
+  only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2),
+  only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  .intro {
+    padding: 6rem 0 6rem;
+  }
+
+  .name {
+    font-size: 7rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .doodle-text {
+    width: 14.2rem;
+    height: auto;
+
+    margin-bottom: -1.1rem;
+  }
+
+  .description {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .white-back {
+    padding: 1.2rem 3rem;
+    bottom: 1%;
+  }
+
+  .subtext {
+    letter-spacing: 0rem;
+  }
+
+  .ipfit-full-phone {
+    right: 3rem;
+  }
+
+  .section-project {
+    gap: 2rem;
+  }
+}
