@@ -50,22 +50,29 @@ label {
 }
 
 .half-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 3.6rem;
+  display: flex;
+  gap: 3.6rem;
 }
 
 .dimension {
   display: grid;
-  grid-template-columns: auto 4fr;
-  gap: 1.5rem;
+  grid-template-columns: auto 17fr;
+  column-gap: 1.5rem;
 
-  align-items: center;
+  align-items: start;
+
+  width: 50%;
 }
 
 .dimension > label {
   grid-column: 1;
   padding-bottom: 0;
+  align-self: center;
+}
+
+#dimension-x,
+#dimension-y {
+  /* height: fit-content; */
 }
 
 #scan-mode {
@@ -78,9 +85,9 @@ label {
   padding: 1.2rem 2rem;
 }
 
-.bad-form {
-  box-shadow: inset 0 0 0 4px #ff8787;
-}
+/* .bad-form {
+  box-shadow: inset 0 0 0 4px #f04e4e;
+} */
 
 form > div {
   position: relative;
@@ -96,9 +103,30 @@ form > div {
   top: 3.2rem;
   right: 1rem;
 
-  transition: all 0.3s;
+  transition: all 0.2s;
+}
+
+.correct-textbox:focus {
+  box-shadow: 0 0 0 0.3rem #2ece4ba3;
+}
+
+.wrong-textbox {
+  box-shadow: 0 0 0 0.3rem #f04e4ec4;
+}
+
+.error-message {
+  color: #f04e4e;
+  padding-top: 0.7rem;
+  font-size: 1.5rem;
+  grid-row: 2;
+  grid-column: 2;
 }
 
 .x-tick {
   right: 36.2rem;
+}
+
+#scan-tick {
+  top: 0.1rem !important;
+  z-index: -1;
 }

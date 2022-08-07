@@ -56,10 +56,13 @@
               minlength="4"
               required
             />
+            <p id="em0" class="error-message hide">
+              Project Names must be atleast 3 characters long.
+            </p>
 
             <ion-icon
               id="proj-tick"
-              class="correct-input hide"
+              class="correct-input opacity"
               name="checkmark-outline"
             ></ion-icon>
           </div>
@@ -68,7 +71,7 @@
             <label for="scan-mode">Scanning Mode</label>
             <div class="chevron-down-input">
               <select id="scan-mode" name="scan-mode" required>
-                <option value="">Please choose one option:</option>
+                <option value="">Choose one option:</option>
                 <option value="GANTRY">Gantry</option>
                 <option value="CRAWLER">Crawler</option>
                 <option value="AUTO">Auto</option>
@@ -79,42 +82,56 @@
                 class="chevron-down"
                 name="chevron-down-outline"
               ></ion-icon>
+              <ion-icon
+                id="scan-tick"
+                class="correct-input opacity"
+                name="checkmark-outline"
+              ></ion-icon>
             </div>
+            <p id="em1" class="error-message hide">A Mode must be chosen.</p>
           </div>
 
-          <div class="half-row">
+          <div>
             <label>Scan Dimensions (cm)</label>
-            <div class="dimension">
-              <label for="dimension-x">X</label>
-              <input
-                id="dimension-x"
-                type="number"
-                placeholder="0"
-                name="dimension-x"
-                min="1"
-                required
-              />
-              <ion-icon
-                id="x-tick"
-                class="correct-input hide x-tick"
-                name="checkmark-outline"
-              ></ion-icon>
-            </div>
-            <div class="dimension">
-              <label for="dimension-y">Y</label>
-              <input
-                id="dimension-y"
-                type="number"
-                placeholder="0"
-                name="dimension-y"
-                min="1"
-                required
-              />
-              <ion-icon
-                id="y-tick"
-                class="correct-input hide"
-                name="checkmark-outline"
-              ></ion-icon>
+            <div class="half-row">
+              <div class="dimension">
+                <label for="dimension-x">X</label>
+                <input
+                  id="dimension-x"
+                  type="number"
+                  placeholder="0"
+                  name="dimension-x"
+                  min="1"
+                  required
+                />
+                <p id="em2" class="error-message hide">
+                  X values must be an integer greater than 1.
+                </p>
+                <ion-icon
+                  id="x-tick"
+                  class="correct-input opacity x-tick"
+                  name="checkmark-outline"
+                ></ion-icon>
+              </div>
+              <div class="dimension">
+                <label for="dimension-y">Y</label>
+                <input
+                  id="dimension-y"
+                  type="number"
+                  placeholder="0"
+                  name="dimension-y"
+                  min="1"
+                  required
+                />
+                <p id="em3" class="error-message hide">
+                  Y values must be an integer greater than 1.
+                </p>
+                <ion-icon
+                  id="y-tick"
+                  class="correct-input opacity"
+                  name="checkmark-outline"
+                ></ion-icon>
+              </div>
             </div>
           </div>
 
@@ -128,9 +145,15 @@
               step=".1"
               required
             />
+            <p id="em4" class="error-message hide">
+              Frequency must be a value greater than 1.
+            </p>
+            <p id="em5" class="error-message hide">
+              Frequency values must be accurate to 1 decimal place.
+            </p>
             <ion-icon
               id="freq-tick"
-              class="correct-input hide"
+              class="correct-input opacity"
               name="checkmark-outline"
             ></ion-icon>
           </div>

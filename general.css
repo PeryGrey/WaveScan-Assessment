@@ -23,19 +23,23 @@ body {
 /**************************/
 
 .container {
-  max-width: 95rem;
+  max-width: 98rem;
   padding: 0 8rem;
   margin: 0 auto;
 }
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.4rem #70a2d4ae;
+  box-shadow: 0 0 0 0.3rem #70a2d4ae;
   transition: all 0.15s;
 }
 
 .hide {
   display: none;
+}
+
+.opacity {
+  opacity: 0 !important;
 }
 
 /******** OTHERS ********/
@@ -87,6 +91,18 @@ select {
 
 input::placeholder {
   color: #868e96;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 .btn {
