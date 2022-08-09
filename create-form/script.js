@@ -250,7 +250,7 @@ submitBtn.addEventListener('click', function (e) {
         // else, go to available scanner page
         else {
           resolve(xhttp.response);
-          location.href = "/scanner-page/scanner-page.html";
+          location.href = "/WaveScan-Assessment/scanner-page/scanner-page.html";
         }
       };
 
