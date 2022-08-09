@@ -1,28 +1,13 @@
-/******** HERO SECTION ********/
-
-.name {
-  font-size: 3rem;
-  padding-bottom: 3.8rem;
-  /* color: #349cd0; */
-}
-
-.description {
-  font-size: 6rem;
-  font-weight: 500;
-  letter-spacing: -1.5px;
-  line-height: 1.15;
-}
+/******** SCANNER SECTION ********/
 
 h3 {
   font-size: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 p {
   font-size: 1.6rem;
 }
-
-/******** SCANNER SECTION ********/
 
 .avail-scanner {
   display: grid;
@@ -32,13 +17,6 @@ p {
   row-gap: 1rem;
   justify-items: center;
   align-items: center;
-
-  margin-bottom: 1rem;
-}
-
-.scanner-header {
-  padding-bottom: 1.5rem;
-  border-bottom: none !important;
 }
 
 .start,
@@ -53,19 +31,6 @@ p {
   font-weight: 600;
 }
 
-.disable-btn {
-  background-color: #adb5bd;
-  color: #8d9296;
-
-  cursor: default;
-}
-
-.disable-btn:hover,
-.disable:active {
-  background-color: #adb5bd;
-  color: #8d9296;
-}
-
 .row-border {
   height: 1px;
   width: 100%;
@@ -74,9 +39,9 @@ p {
 }
 
 .available {
-  color: #8ce99a;
+  color: #2ece4b;
 }
 
 .engaged {
-  color: #ff8787;
+  color: #f04e4e;
 }

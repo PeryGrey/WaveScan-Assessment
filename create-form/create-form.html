@@ -10,11 +10,6 @@
     maximum-scale=1.0, user-scalable=0, height=device-height"
     />
 
-    <meta
-      name="description"
-      content="T.Daranidarran is a front-end developer based in Singapore, with a focus in user experience, and user interaction."
-    />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,13 +17,20 @@
       rel="stylesheet"
     />
 
+    <!-- css files import -->
     <link rel="stylesheet" href="/general.css" />
     <link rel="stylesheet" href="/create-form/css/style.css" />
-    <!-- <link rel="stylesheet" href="/home/css/queries.css" /> -->
 
-    <title>Hire me please</title>
+    <!-- tab header stuff -->
+    <title>WaveScan &mdash; New Project</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.wavescan.sg/wp-content/themes/betheme/images/favicon.ico"
+    />
   </head>
+
   <body>
+    <!-- nav bar just WaveScan icon -->
     <nav class="nav-bar container">
       <header class="header">
         <div class="nav-name-div">
@@ -42,10 +44,11 @@
       </header>
     </nav>
 
-    <div class="section-hero container">
+    <div class="container">
+      <!-- scetion form for new project  -->
       <div class="card">
+        <h2 class="name">Create New Project</h2>
         <form class="create-form" name="data-collection" netlify>
-          <h2 class="name">Create New Project</h2>
           <div>
             <label for="project-name">Project Name</label>
             <input
@@ -56,10 +59,11 @@
               minlength="4"
               required
             />
+            <!-- project name error message hidden -->
             <p id="em0" class="error-message hide">
               Project Names must be atleast 3 characters long.
             </p>
-
+            <!-- correct input tick icon opacity = 0 -->
             <ion-icon
               id="proj-tick"
               class="correct-input opacity"
@@ -82,12 +86,14 @@
                 class="chevron-down"
                 name="chevron-down-outline"
               ></ion-icon>
+              <!-- correct input tick icon opacity = 0 -->
               <ion-icon
                 id="scan-tick"
                 class="correct-input opacity"
                 name="checkmark-outline"
               ></ion-icon>
             </div>
+            <!-- scanning mode error message hidden -->
             <p id="em1" class="error-message hide">A Mode must be chosen.</p>
           </div>
 
@@ -104,9 +110,11 @@
                   min="1"
                   required
                 />
+                <!-- scan dimension X error message hidden -->
                 <p id="em2" class="error-message hide">
                   X values must be an integer greater than 1.
                 </p>
+                <!-- correct input tick icon opacity = 0 -->
                 <ion-icon
                   id="x-tick"
                   class="correct-input opacity x-tick"
@@ -123,9 +131,11 @@
                   min="1"
                   required
                 />
+                <!-- scan dimension y error message hidden -->
                 <p id="em3" class="error-message hide">
                   Y values must be an integer greater than 1.
                 </p>
+                <!-- correct input tick icon opacity = 0 -->
                 <ion-icon
                   id="y-tick"
                   class="correct-input opacity"
@@ -145,12 +155,15 @@
               step=".1"
               required
             />
+            <!-- scanner frequency < 1 error message hidden -->
             <p id="em4" class="error-message hide">
               Frequency must be a value greater than 1.
             </p>
+            <!-- scanner frequency decimal error message hidden -->
             <p id="em5" class="error-message hide">
               Frequency values must be accurate to 1 decimal place.
             </p>
+            <!-- correct input tick icon opacity = 0 -->
             <ion-icon
               id="freq-tick"
               class="correct-input opacity"
@@ -163,6 +176,7 @@
       </div>
     </div>
 
+    <!-- icon image import -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -171,7 +185,8 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0"></script>
+
+    <!-- js file import -->
     <script src="/create-form/script.js"></script>
   </body>
 </html>

@@ -10,11 +10,6 @@
     maximum-scale=1.0, user-scalable=0, height=device-height"
     />
 
-    <meta
-      name="description"
-      content="T.Daranidarran is a front-end developer based in Singapore, with a focus in user experience, and user interaction."
-    />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,13 +17,20 @@
       rel="stylesheet"
     />
 
+    <!-- css files import -->
     <link rel="stylesheet" href="/general.css" />
     <link rel="stylesheet" href="/scanner-page/css/style.css" />
-    <!-- <link rel="stylesheet" href="/home/css/queries.css" /> -->
 
-    <title>Hire me please</title>
+    <!-- tab header stuff -->
+    <title>WaveScan &mdash; Available Scanners</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.wavescan.sg/wp-content/themes/betheme/images/favicon.ico"
+    />
   </head>
+
   <body>
+    <!-- nav bar just WaveScan icon -->
     <nav class="nav-bar container">
       <header class="header">
         <div class="nav-name-div">
@@ -42,10 +44,13 @@
       </header>
     </nav>
 
-    <div class="section-hero container">
+    <div class="container">
+      <!-- scetion form for new project  -->
       <div class="card">
         <h2 class="name">
           Available Scanners:
+          <span class="scanner-avail">0</span>
+          /
           <span class="scanner-num">0</span>
         </h2>
 
@@ -56,24 +61,11 @@
           <h3>Scanner Speed</h3>
           <h3>Status</h3>
           <h3></h3>
-          <!-- 
-          content
-          <p class="scanner-name">Crawler</p>
-          <p class="ip">12.5123</p>
-          <p class="speed">234 m/s</p>
-          <p class="status">Available</p>
-          <button class="btn scanner-btn">Connect</button>
-          <div class="row-border"></div>
-          content
-          <p class="scanner-name">Crawler</p>
-          <p class="ip">12.5123</p>
-          <p class="speed">234 m/s</p>
-          <p class="status">Available</p>
-          <button class="btn disable-btn scanner-btn">Connect</button> -->
         </div>
       </div>
     </div>
 
+    <!-- icon image import -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -82,6 +74,8 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <!-- js file import -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0"></script>
     <script src="/scanner-page/script.js"></script>
   </body>
