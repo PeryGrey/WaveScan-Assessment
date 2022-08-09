@@ -247,7 +247,7 @@ submitBtn.addEventListener('click', function (e) {
           reject(xhttp.response);
           checkWrong();
         }
-        // else, go to available scanner page
+        // else, go to available scanner page next
         else {
           resolve(xhttp.response);
           location.href = "/WaveScan-Assessment/scanner-page/scanner-page.html";
